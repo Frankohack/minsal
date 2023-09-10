@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Presentacion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-background">
+  <div class="content-container">
+    <ion-img
+    src="assets\icon\clave unica.png"
+    alt="Para el inicio de sesion"
+  ></ion-img>
+    <div class="description">
+      Ingresa con tus datos personales o clave unica
+    </div>
+    <ion-button shape="round" class="arrow-button" (click)="navigateToTab5()">
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-button>
+     
+  </div>
+</ion-content>

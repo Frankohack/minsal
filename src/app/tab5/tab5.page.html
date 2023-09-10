@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="login-container">
+    <ion-input type="email" placeholder="Ingresa tu Mail o Rut"
+    [(ngModel)]="usuario"></ion-input>
+    <ion-input
+    [type]="showPassword ? 'text' : 'password'"
+    placeholder="contrasena"
+    [(ngModel)]="contrasena"
+  ></ion-input>
+  <ion-icon
+    name="{{ showPassword ? 'eye-off-outline' : 'eye-outline' }}"
+    slot="end"
+    (click)="togglePasswordVisibility()"
+    type="button" 
+  ></ion-icon>
+    <ion-button class="login-button" (click)="enviarSolicitud()">Acceder</ion-button>
+    <div class="signup-text" (click)="irARegistro()">
+      ¿No tienes cuenta? ¡Inscríbete!
+    </div>
+    <div class="avatar-container">
+      <ion-avatar>
+        <ion-img class="iniciounica" src="assets\icon\inicio de seesion clave univa.png"></ion-img>
+      </ion-avatar>
+      <ion-avatar>
+        <ion-img class="iniciogoogle" src="assets\icon\google inicio.png"></ion-img>
+      </ion-avatar>
+    </div>
+  </div>
+</ion-content>
+
+

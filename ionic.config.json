@@ -1,0 +1,7 @@
+{
+  "name": "MINSAL ",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

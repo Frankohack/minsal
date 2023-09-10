@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Presentacion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-background">
+  <div class="content-container">
+    <ion-img
+    src="assets\icon\Hospital.png"
+    alt="Solicita tu hora medica"
+  ></ion-img>
+    <div class="description">
+      Consulta tu Hospital o Cesfam mas cercano
+    </div>
+    <ion-button shape="round" class="arrow-button" (click)="navigateToTab4()">
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-button>    
+  </div>
+</ion-content>

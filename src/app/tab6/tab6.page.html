@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      Completa tus datos para el registro
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input placeholder="Nombres" [(ngModel)]="nombres"></ion-input>
+      <ion-input placeholder="Apellidos" [(ngModel)]="apellidos"></ion-input>
+      <ion-input placeholder="Correo Electrónico" [(ngModel)]="usuario" type="email"></ion-input>
+      <ion-input placeholder="Contraseña" [(ngModel)]="contrasena" type="password"></ion-input>
+      <ion-input placeholder="RUT" [(ngModel)]="rut"></ion-input>
+      <ion-input placeholder="Número de Teléfono" [(ngModel)]="telefono" type="number"></ion-input>
+      <ion-input placeholder="Región" [(ngModel)]="region"></ion-input>
+      <ion-input placeholder="Comuna" [(ngModel)]="comuna"></ion-input>
+      <ion-input placeholder="Dirección" [(ngModel)]="direccion"></ion-input>
+      <ion-input placeholder="Número" [(ngModel)]="numero" type="number"></ion-input>
+    </ion-card-content>
+    <ion-footer>
+      <ion-button expand="full" (click)="registrarUsuario()">Registrarse</ion-button>
+    </ion-footer>
+  </ion-card>
+
+  <ion-card *ngIf="registroExitoso">
+    <ion-card-header>
+      Registro Exitoso
+    </ion-card-header>
+    <ion-card-content>
+      ¡El usuario ha sido registrado exitosamente!
+    </ion-card-content>
+    <ion-footer>
+      <ion-button (click)="irAPagina5()">Ingresar</ion-button>
+    </ion-footer>
+  </ion-card>
+</ion-content>

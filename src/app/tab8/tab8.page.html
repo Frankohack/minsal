@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Enviar Mensaje a Medico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="enviarCorreo()">
+    <ion-item>
+      <ion-label position="stacked">Para:</ion-label>
+      <ion-input type="email" [(ngModel)]="destinatario" name="destinatario" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked">Asunto:</ion-label>
+      <ion-input type="text" [(ngModel)]="asunto" name="asunto" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Mensaje:</ion-label>
+      <ion-textarea [(ngModel)]="mensaje" name="mensaje" rows="6" required></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Enviar</ion-button>
+  </form>
+</ion-content>

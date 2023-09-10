@@ -1,0 +1,37 @@
+.custom-background {
+    background-color: white;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 100px;
+  }
+  
+  ion-img {
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: contain;
+    margin-top: 10px;
+  }
+  
+  .description {
+    color: black; 
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .arrow-button {
+    --background: rgba(33, 12, 219, 0.89);
+    --color: white;
+    --border-radius: 60%;
+    --width: 56px;
+    --height: 56px;
+    --margin-top: 20px;
+    --ionicon-scale: 1.2; 
+  }
+  
